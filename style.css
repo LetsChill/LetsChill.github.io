@@ -5,12 +5,12 @@
     padding: 0;
     margin: 0;
 }
-.wrapper {
+.selectr{
     background-image: url(bgs/download.png);
     background-size: cover;
     height: 100vh;
 }
-.wrapper .center {
+.selectr .center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,7 +63,7 @@ span {
     height: 100%;
     text-decoration: none;
 }
-.navbar {
+.navi{
     height: 80px;
     width: 100%;
     background:rgba(94, 165, 224, 0);
@@ -73,18 +73,18 @@ span {
     height: auto;
     padding: -1px 60px;
 }
-.navbar ul {
+.navi ul {
     float: right;
     margin-right: 20px;
 }
-.navbar ul li {
+.navi ul li {
     list-style: none;
     margin: 0 8px;
     display: inline-block;
     line-height: 40px;
     position: relative;
 }
-.navbar ul li a {
+.navi ul li a {
     text-decoration: none;
     color: white;
     font-size: 23px;
@@ -93,7 +93,7 @@ span {
     text-transform: uppercase;
     transition: .7s
 }
-.navbar ul li::after {
+.navi ul li::after {
     content: '';
     height: 3px;
     width: 100%;
@@ -102,7 +102,7 @@ span {
     left: 0;
     bottom: 0;
 }
-.navbar ul li a:hover {
+.navi ul li a:hover {
     background: rgba(255, 255, 255, 0.336);
     border-radius: 25px;
 }
