@@ -33,40 +33,34 @@
 .wrapper {
   display: flex;
 }
-
+#div_box * {
+    background-color: #1C5CC8;
+    border: 1px solid #292A2E;
+    border-radius: 8px; 
+    width: 200px;
+    height: 150px;
+    text-align : center;
+    position:relative; 
+    left: 10px;
+    }
 #header {
     width: 100%;
     background-color: red;
     height: 30px;
 }
 
-#container {
-    width: 300px;
-    background-color: #ffcc33;
-    margin: auto;
-    text-align: center;
-    background-color: #0073e6;
-    border-radius: 8px;
+.flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
 }
-#first {
-    float: left;
-    border: 1px solid #292A2E;
-    background-color: #0073e6;
-    border-radius: 8px;
-    border: 1px solid #292A2E;
+.flex-gap > div {
+  margin: 12px;
+  border: 1px solid #292A2E;
+  border-radius: 8px; 
+  font-family: Arial;
 }
-#second {
-    overflow: auto;
-    background-color: green;  
-    border: 1px solid #292A2E;
-    background-color: #0073e6;
-    border-radius: 8px;
-    border: 1px solid #292A2E;
-}
-#clear {
-    clear: both;
-}
-
 .btn:hover {opacity: 1}
 
 .boxdiv {
@@ -99,10 +93,21 @@ body {
     left: 10px;
     
 }
+    
+.meh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+    }
+.bottom-div {
+   background-color: #212226;
+   
+}
+    
 </style>
 </head>
 <body>
-<div id="header"></div>
 
 <div class="logo">
     <p style=font-family: "font-logo";>UR</p>
@@ -139,7 +144,7 @@ body {
     <p style="position:relative; top: -16px;">a Unique shop system with alot of weapons, buy what suits your taste and fight em all!</p>
     </div>
 </div>
-<br>
+<br> 
 <div class="boxdiv">
     <div class="small_text">
     <h2>Complete Shop System</h2>
@@ -147,5 +152,9 @@ body {
     </div>
 </div>
 <br>
-
+<h1 style="font-family: Arial; text-align: center; margin: center;"> Wanna Start Your Journey?</h1>
+<div class="meh">
+    <a href= "https://discord.gg/FQYVpuNz4Q"><button class="btn" style="background-color: #1C5CC8; position: relative; top: -10px; font-size: 24px;">Get Started! <i class="fas fa-arrow-right"></i></button>
+    </a>
+    </div>
 </html>
