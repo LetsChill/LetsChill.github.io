@@ -1,5 +1,5 @@
 from quart import Quart, render_template, websocket
-import requests
+import aiohttp
 
 app = Quart(__name__)
 
