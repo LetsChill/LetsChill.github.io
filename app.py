@@ -9,15 +9,15 @@ counts = {
         "player_count" : None
     }
 
-async counts_updat()
+async def counts_updat()
     
 
 @app.route('/')
-async hello_world():
+async def hello_world():
     return render_template('index.html', counts=counts)
 
 @app.route("/quit")
-async main():
+async def main():
     return quit()
     
 if __name__ == '__main__':
