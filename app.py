@@ -1,16 +1,23 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from quart import Quart, render_template, websocket
+import requests
+
+app = Quart(__name__)
+
+
+counts = {
+        "count" : None,
+        "player_count" : None
+    }
+
+async counts_updat()
+    
 
 @app.route('/')
-def hello_world():
-    counts = {
-        "count" : 1200,
-        "player_count" : 4075
-    }
+async hello_world():
     return render_template('index.html', counts=counts)
 
 @app.route("/quit")
-def main():
+async main():
     return quit()
     
 if __name__ == '__main__':
