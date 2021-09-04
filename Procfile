@@ -1,1 +1,1 @@
-web: python app.py
+web: hypercone --worker-class quart.worker.GunicornWorker app:app
