@@ -9,7 +9,8 @@ counts = {
         "player_count" : None
     }
 
-async def counts_updat()
+async def counts_updat():
+    return
     
 
 @app.route('/')
